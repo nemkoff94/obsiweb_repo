@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://example.com/</loc>
+  </url>
+  <url>
+    <loc>https://example.com/cases/lesnoe.html</loc>
+  </url>
+  <url>
+    <loc>https://example.com/cases/komz40.html</loc>
+  </url>
+  <url><loc>https://example.com/cases/a-clinic.html</loc></url>
+  <url><loc>https://example.com/cases/estetica.html</loc></url>
+  <url><loc>https://example.com/cases/instom.html</loc></url>
+  <url><loc>https://example.com/cases/ideastroy.html</loc></url>
+  <url><loc>https://example.com/cases/congear.html</loc></url>
+  <url><loc>https://example.com/cases/uniqset.html</loc></url>
+  <url><loc>https://example.com/cases/diaconia.html</loc></url>
+</urlset>

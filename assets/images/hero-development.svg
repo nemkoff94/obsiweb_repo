@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620" fill="none">
+  <defs>
+    <linearGradient id="halo" x1="110" y1="70" x2="653" y2="548" gradientUnits="userSpaceOnUse"><stop stop-color="#F1F4FF"/><stop offset="1" stop-color="#E0E9FF"/></linearGradient>
+    <linearGradient id="blue" x1="310" y1="176" x2="526" y2="399" gradientUnits="userSpaceOnUse"><stop stop-color="#86A6FF"/><stop offset=".48" stop-color="#3769FA"/><stop offset="1" stop-color="#153EC4"/></linearGradient>
+    <linearGradient id="shine" x1="343" y1="180" x2="505" y2="360" gradientUnits="userSpaceOnUse"><stop stop-color="#DBE6FF"/><stop offset="1" stop-color="#80A0FF"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#1A347A" flood-opacity=".16"/></filter>
+    <filter id="float" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#1B377D" flood-opacity=".18"/></filter>
+  </defs>
+
+  <!-- Декоративная композиция: окно сайта, панель кода и мобильный экран. -->
+  <rect x="113" y="55" width="526" height="496" rx="54" fill="url(#halo)"/>
+  <circle cx="376" cy="303" r="200" stroke="#C8D6FF" stroke-width="1.5"/>
+  <circle cx="376" cy="303" r="241" stroke="#D3DFFF" stroke-width="1.5"/>
+  <path d="M56 177h24M68 165v24M679 123h24M691 111v24" stroke="#A2B6F3" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="648" cy="474" r="5" fill="#A5B9F5"/><circle cx="97" cy="449" r="4" fill="#B8C9FB"/>
+
+  <g filter="url(#shadow)">
+    <rect x="89" y="112" width="524" height="375" rx="16" fill="#fff"/>
+    <path d="M89 128c0-8.8 7.2-16 16-16h492c8.8 0 16 7.2 16 16v22H89v-22Z" fill="#F9FAFD"/>
+    <path d="M89 150h524" stroke="#E9EDF5"/>
+    <circle cx="110" cy="131" r="3" fill="#C8D0E0"/><circle cx="122" cy="131" r="3" fill="#C8D0E0"/><circle cx="134" cy="131" r="3" fill="#C8D0E0"/>
+    <rect x="267" y="125" width="168" height="12" rx="6" fill="#EEF1F7"/>
+    <rect x="117" y="177" width="218" height="16" rx="8" fill="#D9E1F1"/>
+    <rect x="117" y="208" width="173" height="10" rx="5" fill="#E7EBF3"/><rect x="117" y="230" width="130" height="10" rx="5" fill="#E7EBF3"/>
+    <rect x="117" y="265" width="88" height="31" rx="8" fill="#2456F5"/>
+    <rect x="117" y="325" width="113" height="113" rx="12" fill="#F1F4FC"/><rect x="242" y="325" width="113" height="113" rx="12" fill="#F1F4FC"/>
+    <path d="M135 350h48M135 363h63M135 389h28M260 350h48M260 363h63M260 389h28" stroke="#C8D3E9" stroke-width="6" stroke-linecap="round"/>
+    <rect x="369" y="176" width="206" height="262" rx="14" fill="#EAF0FF"/>
+    <path d="M397 303c0-56 45-101 101-101h49v101c0 56-45 101-101 101h-49V303Z" fill="url(#blue)"/>
+    <path d="M397 303c0-56 45-101 101-101h49L446 303h-49Z" fill="url(#shine)"/>
+    <path d="m397 404 101-101h49c0 56-45 101-101 101h-49Z" fill="#1C45D1"/>
+    <path d="m397 404 150-202" stroke="#DDE8FF" stroke-opacity=".7" stroke-width="2"/>
+  </g>
+
+  <!-- Абстрактные строки кода без текста. -->
+  <g filter="url(#float)">
+    <rect x="32" y="348" width="181" height="137" rx="15" fill="#1C2436"/>
+    <circle cx="51" cy="367" r="3" fill="#7395FF"/><circle cx="62" cy="367" r="3" fill="#65718C"/><circle cx="73" cy="367" r="3" fill="#65718C"/>
+    <path d="m61 399-10 9 10 9m18-18 10 9-10 9" stroke="#91AEFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M105 399h61M105 409h39M105 419h51M51 451h40m11 0h44" stroke="#7182A9" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#float)">
+    <rect x="556" y="313" width="142" height="235" rx="22" fill="#20293B"/><rect x="564" y="321" width="126" height="219" rx="15" fill="#fff"/>
+    <rect x="605" y="328" width="43" height="5" rx="2.5" fill="#20293B"/>
+    <rect x="577" y="350" width="53" height="7" rx="3.5" fill="#CCD7EC"/><path d="M665 350h11m-11 6h11" stroke="#A4AFC1" stroke-width="2" stroke-linecap="round"/>
+    <rect x="577" y="372" width="75" height="10" rx="5" fill="#D8E0F0"/><rect x="577" y="389" width="55" height="7" rx="3.5" fill="#E6EBF4"/>
+    <rect x="577" y="408" width="39" height="17" rx="5" fill="#2456F5"/><rect x="577" y="440" width="100" height="79" rx="9" fill="#EAF0FF"/>
+    <path d="M590 482c0-16 13-29 29-29h45v25c0 16-13 29-29 29h-45v-25Z" fill="url(#blue)"/>
+    <path d="M590 482c0-16 13-29 29-29h45l-29 29h-45Z" fill="url(#shine)"/>
+  </g>
+</svg>

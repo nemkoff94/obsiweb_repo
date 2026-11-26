@@ -1,0 +1,1488 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f7f9" />
+    <meta
+      name="description"
+      content="Веб-студия Обсидиан: разработка лендингов, корпоративных сайтов и интернет-магазинов под ключ для задач бизнеса. Поддержка после запуска."
+    />
+    <title>Обсидиан — разработка сайтов под ключ для бизнеса</title>
+    <link rel="canonical" href="https://example.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="Обсидиан" />
+    <meta
+      property="og:title"
+      content="Обсидиан — разработка сайтов под ключ для бизнеса"
+    />
+    <meta
+      property="og:description"
+      content="Лендинги, корпоративные сайты и интернет-магазины для задач бизнеса. От идеи до запуска и поддержки."
+    />
+    <meta property="og:url" content="https://example.com/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://example.com/#organization",
+            "name": "Обсидиан",
+            "url": "https://example.com/"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://example.com/#website",
+            "name": "Обсидиан",
+            "url": "https://example.com/",
+            "inLanguage": "ru",
+            "publisher": { "@id": "https://example.com/#organization" }
+          }
+        ]
+      }
+    </script>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/case.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/lucide@0.468.0/dist/umd/lucide.min.js"
+    ></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/navigation.js"></script>
+    <script defer src="js/portfolio.js"></script>
+    <script defer src="js/animations.js"></script>
+    <script defer src="js/forms.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header" data-header>
+      <div class="header-contact-bar">
+        <div class="container header-contacts">
+          <a href="tel:+79533392119">+7 953 339 21 19</a>
+          <a href="mailto:ceo@obsidianweb.ru">ceo@obsidianweb.ru</a>
+          <div class="messenger-links">
+            <a href="https://max.ru/u/f9LHodD0cOLalLghDjZwTyNTVos0xyyUWdQAWlt0J5QNsN8-x4kr8aX7M2I" aria-label="Написать в MAX">
+              <img src="assets/images/MAX.svg" alt="" />
+            </a>
+            <a href="https://t.me/nemkoff" aria-label="Написать в Telegram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#229ED9"/><path fill="#fff" d="M18.5 6.2 16.4 17c-.16.76-.58.94-1.17.59l-3.18-2.34-1.53 1.47c-.17.17-.31.31-.64.31l.23-3.24 5.9-5.33c.26-.23-.06-.36-.39-.13l-7.3 4.6-3.14-.98c-.68-.21-.7-.68.14-1.01l12.28-4.73c.57-.21 1.07.13.9.99Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Обсидиан — на главную"
+          ><span class="brand-mark" aria-hidden="true"><span></span></span
+          ><span>обсидиан<span class="brand-dot">.</span></span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          data-menu-toggle
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Открыть меню"
+        >
+          <span></span><span></span>
+        </button>
+        <nav
+          class="header-nav"
+          id="mobile-menu"
+          data-mobile-menu
+          aria-label="Основная навигация"
+        >
+          <a href="#services">Услуги</a><a href="#portfolio">Портфолио</a
+          ><a href="#process">Этапы работы</a><a href="#pricing">Стоимость</a
+          ><a href="#contact">Контакты</a>
+          <a
+            class="button button--small button--dark header-cta"
+            href="#contact"
+            >Обсудить проект <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="top" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-content" data-reveal>
+            <p class="eyebrow">
+              <span class="status-dot"></span> Веб-студия полного цикла
+            </p>
+            <h1 id="hero-title">
+              Сайты, которые помогают <span>бизнесу расти</span>
+            </h1>
+            <p class="hero-description">
+              Разрабатываем лендинги, корпоративные сайты и интернет-магазины.
+              Продумываем дизайн, структуру и функциональность, чтобы сайт
+              работал на задачи вашего бизнеса
+            </p>
+            <div class="hero-actions">
+              <a class="button button--primary" href="#contact"
+                >Обсудить проект <span aria-hidden="true">↗</span></a
+              ><a class="text-link" href="#portfolio"
+                >Смотреть проекты <span aria-hidden="true">↓</span></a
+              >
+            </div>
+            <div class="hero-caption">
+              <span class="caption-line"></span> Подробная консультация бесплатна для вас
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <img
+              src="assets/images/hero-development.svg"
+              alt=""
+              width="760"
+              height="620"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+        <div class="container hero-bottom">
+          <span>ПРОКРУТИТЕ, ЧТОБЫ УЗНАТЬ БОЛЬШЕ</span
+          ><span aria-hidden="true">↓</span><span>01 — 08</span>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Наш опыт и подход">
+        <div class="container trust-inner">
+          <p class="trust-intro">
+            <span class="status-dot" aria-hidden="true"></span> Обсидиан / о
+            работе с нами
+          </p>
+          <ul class="trust-list">
+            <li class="trust-item">
+              <span class="trust-number" aria-hidden="true">01</span
+              ><strong>Более 10 лет опыта</strong>
+              <p>В разработке сайтов для бизнеса</p>
+            </li>
+            <li class="trust-item">
+              <span class="trust-number" aria-hidden="true">02</span
+              ><strong>Решаем задачи бизнеса</strong>
+              <p>Продумываем сайт под ваши цели</p>
+            </li>
+            <li class="trust-item">
+              <span class="trust-number" aria-hidden="true">03</span
+              ><strong>Разработка под ключ</strong>
+              <p>От обсуждения идеи до запуска</p>
+            </li>
+            <li class="trust-item">
+              <span class="trust-number" aria-hidden="true">04</span
+              ><strong>Поддержка после запуска</strong>
+              <p>Помогаем сопровождать и развивать сайт</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        class="section services"
+        id="services"
+        aria-labelledby="services-title"
+      >
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <div>
+              <p class="eyebrow">
+                <span class="section-index">01 /</span> НАШИ УСЛУГИ
+              </p>
+              <h2 id="services-title">
+                От идеи до сайта,<br /><span class="muted"
+                  >который работает.</span
+                >
+              </h2>
+            </div>
+            <p class="heading-aside">
+              Берём на себя весь путь: от первого вопроса до запуска готового
+              продукта.
+            </p>
+          </div>
+          <div class="service-grid" data-stagger>
+            <article class="service-card">
+              <div class="card-top">
+                <span>01 / ЛЕНДИНГИ</span
+                ><span class="card-arrow" aria-hidden="true">↗</span>
+              </div>
+              <svg
+                class="service-icon"
+                viewBox="0 0 40 40"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <rect x="3" y="5" width="34" height="30" rx="3" />
+                <path d="M3 11h34M8 8h.1M11 8h.1M8 16h10M8 20h8M8 25h8v4H8z" />
+                <rect x="23" y="16" width="9" height="13" rx="1.5" />
+              </svg>
+              <h3>Лендинги</h3>
+              <p>
+                Для продвижения услуги, продукта или акции. Одностраничный сайт
+                расскажет о предложении и поможет собирать заявки.
+              </p>
+              <div class="card-tags">
+                <span>Структура</span><span>Форма заявки</span>
+              </div>
+              <a class="text-link service-link" href="#contact"
+                >Обсудить лендинг <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="service-card">
+              <div class="card-top">
+                <span>02 / КОМПАНИЯМ</span
+                ><span class="card-arrow" aria-hidden="true">↗</span>
+              </div>
+              <svg
+                class="service-icon"
+                viewBox="0 0 40 40"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <rect x="3" y="5" width="34" height="30" rx="3" />
+                <path
+                  d="M3 11h34M8 8h.1M11 8h.1M10 30h20M13 30V17l7-3 7 3v13M17 20h.1M23 20h.1M17 24h.1M23 24h.1M19 30v-3h2v3"
+                />
+              </svg>
+              <h3>Корпоративные сайты</h3>
+              <p>
+                Для компаний, которым важно представить бизнес и услуги. Разделы
+                о компании, услугах и контактах помогут клиентам найти нужную
+                информацию.
+              </p>
+              <div class="card-tags">
+                <span>Разделы услуг</span><span>Контакты</span>
+              </div>
+              <a class="text-link service-link" href="#contact"
+                >Обсудить сайт <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="service-card">
+              <div class="card-top">
+                <span>03 / ПРОДАЖИ</span
+                ><span class="card-arrow" aria-hidden="true">↗</span>
+              </div>
+              <svg
+                class="service-icon"
+                viewBox="0 0 40 40"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M7 16h26l-2-8H9l-2 8ZM8 16v16h24V16M7 16c0 3 4 3 5.2 0 1.2 3 4.1 3 5.3 0 1.2 3 3.8 3 5 0 1.2 3 4.1 3 5.3 0 1.2 3 5.2 3 5.2 0M13 21h2l2 7h9l2-5H16M18 31h.1M25 31h.1"
+                />
+              </svg>
+              <h3>Интернет-магазины</h3>
+              <p>
+                Для бизнеса, который продаёт товары онлайн. Каталог, карточки
+                товаров и оформление заказа помогают покупателям выбрать и
+                заказать товар.
+              </p>
+              <div class="card-tags">
+                <span>Каталог</span><span>Заказы</span>
+              </div>
+              <a class="text-link service-link" href="#contact"
+                >Обсудить магазин <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section value-section" aria-labelledby="value-title">
+        <div class="container value-grid">
+          <div data-reveal>
+            <p class="eyebrow eyebrow--light">
+              <span class="section-index">02 /</span> ЗАЧЕМ ЭТО БИЗНЕСУ
+            </p>
+            <h2 id="value-title">
+              Сайт должен работать <span>на ваш бизнес</span>
+            </h2>
+            <p class="value-intro">
+              Продуманный сайт помогает клиентам познакомиться с вашим
+              предложением и сделать следующий шаг.
+            </p>
+            <a class="text-link text-link--light" href="#contact"
+              >Обсудить вашу задачу <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="value-list" data-stagger>
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Привлечение клиентов</h3>
+                <p>
+                  Понятная подача услуг и удобные формы помогают посетителям
+                  обратиться к вам.
+                </p>
+              </div>
+              <span aria-hidden="true">↗</span>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Доверие к компании</h3>
+                <p>
+                  Информация о бизнесе и аккуратный дизайн помогают сформировать
+                  доверие.
+                </p>
+              </div>
+              <span aria-hidden="true">↗</span>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h3>Удобство для посетителей</h3>
+                <p>
+                  Логичная структура помогает быстро найти информацию и
+                  связаться с вами.
+                </p>
+              </div>
+              <span aria-hidden="true">↗</span>
+            </article>
+            <article>
+              <span>04</span>
+              <div>
+                <h3>Основа для SEO и рекламы</h3>
+                <p>
+                  Продуманная структура и техническая подготовка создают основу
+                  для продвижения в поиске и рекламных кампаниях.
+                </p>
+              </div>
+              <span aria-hidden="true">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section portfolio"
+        id="portfolio"
+        aria-labelledby="portfolio-title"
+      >
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <div>
+              <p class="eyebrow">
+                <span class="section-index">03 /</span> ПОРТФОЛИО
+              </p>
+              <h2 id="portfolio-title">
+                Идеи обретают <span class="muted">форму.</span>
+              </h2>
+            </div>
+            <p class="heading-aside">
+              Проекты, в которых цифровая среда помогает рассказать историю
+              бизнеса.
+            </p>
+          </div>
+          <div class="portfolio-grid" id="portfolio-grid" data-stagger>
+            <article class="portfolio-card featured-project">
+              <div class="featured-project__visual">
+                <div class="browser-frame">
+                  <div class="browser-frame__bar" aria-hidden="true">
+                    <span class="browser-frame__dots">● ● ●</span
+                    ><span>lesnoe.ru</span><span>↗</span>
+                  </div>
+                  <img
+                    src="assets/images/lesnoe-about.jpg"
+                    width="2532"
+                    height="1620"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Страница об отеле-заповеднике «Лесное»"
+                  />
+                </div>
+              </div>
+              <div class="featured-project__content">
+                <p class="featured-project__index">ИЗБРАННЫЙ ПРОЕКТ / 01</p>
+                <div class="portfolio-project-tags">
+                  <span>Сайт отеля</span><span>Гостеприимство</span
+                  ><span>WordPress</span>
+                </div>
+                <h3>Отель-заповедник «Лесное»</h3>
+                <p>
+                  Сайт отеля в Калужской области: номера, услуги, рестораны и
+                  возможности для отдыха в одном пространстве.
+                </p>
+                <div class="featured-project__links">
+                  <a class="button button--dark" href="cases/lesnoe.html"
+                    >Смотреть кейс <span aria-hidden="true">↗</span></a
+                  ><a
+                    class="text-link"
+                    href="https://lesnoe.ru/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >На сайт отеля <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (откроется в новой вкладке)</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </article>
+            <article
+              class="portfolio-card featured-project featured-project--industrial"
+            >
+              <div class="featured-project__visual">
+                <div class="browser-frame">
+                  <div class="browser-frame__bar" aria-hidden="true">
+                    <span class="browser-frame__dots">● ● ●</span
+                    ><span>komz40.ru</span><span>↗</span>
+                  </div>
+                  <img
+                    src="assets/images/komz-home.jpg"
+                    width="2532"
+                    height="1620"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Главная страница сайта Калужского опытно-механического завода"
+                  />
+                </div>
+              </div>
+              <div class="featured-project__content">
+                <p class="featured-project__index">ИЗБРАННЫЙ ПРОЕКТ / 02</p>
+                <div class="portfolio-project-tags">
+                  <span>Корпоративный сайт</span><span>Производство</span
+                  ><span>WordPress</span>
+                </div>
+                <h3>Калужский опытно-механический завод</h3>
+                <p>
+                  Сайт завода: услуги металлообработки, технические возможности,
+                  портфолио и запрос расчёта по техническому заданию.
+                </p>
+                <div class="featured-project__links">
+                  <a class="button button--dark" href="cases/komz40.html"
+                    >Смотреть кейс <span aria-hidden="true">↗</span></a
+                  ><a
+                    class="text-link"
+                    href="https://komz40.ru/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >На сайт завода <span aria-hidden="true">↗</span
+                    ><span class="visually-hidden">
+                      (откроется в новой вкладке)</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="portfolio-card portfolio-card--project">
+              <div class="portfolio-project-image">
+                <img
+                  src="assets/images/a-clinic-home.jpg"
+                  width="2532"
+                  height="1620"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Главная страница стоматологической клиники «АКлиник»"
+                />
+              </div>
+              <div class="portfolio-project-content">
+                <div class="portfolio-project-tags">
+                  <span>Сайт клиники</span><span>Стоматология</span>
+                </div>
+                <h3>АКлиник</h3>
+                <p>
+                  Стоматологическая клиника: услуги, цены, врачи и информация о
+                  клинике.
+                </p>
+                <div class="portfolio-project-links">
+                  <a class="text-link" href="cases/a-clinic.html"
+                    >Смотреть кейс<span class="visually-hidden">
+                      «АКлиник»</span
+                    >
+                    <span aria-hidden="true">↗</span></a
+                  ><a
+                    class="text-link"
+                    href="https://a-clinic40.ru/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >На сайт<span class="visually-hidden">
+                      «АКлиник» (откроется в новой вкладке)</span
+                    >
+                    <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="portfolio-card portfolio-card--project">
+              <div class="portfolio-project-image">
+                <img
+                  src="assets/images/estetica-home.jpg"
+                  width="2532"
+                  height="1620"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Главная страница стоматологической клиники «Эстетика»"
+                />
+              </div>
+              <div class="portfolio-project-content">
+                <div class="portfolio-project-tags">
+                  <span>Сайт клиники</span><span>Стоматология</span>
+                </div>
+                <h3>Эстетика</h3>
+                <p>
+                  Стоматология в Калуге: услуги, цены, работы, команда и блог.
+                </p>
+                <div class="portfolio-project-links">
+                  <a class="text-link" href="cases/estetica.html"
+                    >Смотреть кейс<span class="visually-hidden">
+                      «Эстетика»</span
+                    >
+                    <span aria-hidden="true">↗</span></a
+                  ><a
+                    class="text-link"
+                    href="https://esteticaclinic.ru/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >На сайт<span class="visually-hidden">
+                      «Эстетика» (откроется в новой вкладке)</span
+                    >
+                    <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="portfolio-card portfolio-card--project">
+              <div class="portfolio-project-image">
+                <img
+                  src="assets/images/instom-home.jpg"
+                  width="2532"
+                  height="1620"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Главная страница Центра инновационной стоматологии"
+                />
+              </div>
+              <div class="portfolio-project-content">
+                <div class="portfolio-project-tags">
+                  <span>Сайт клиники</span><span>Стоматология</span>
+                </div>
+                <h3>Центр инновационной стоматологии</h3>
+                <p>
+                  Клиника в Балабаново: стоматологические услуги, специалисты,
+                  цены и контакты.
+                </p>
+                <div class="portfolio-project-links">
+                  <a class="text-link" href="cases/instom.html"
+                    >Смотреть кейс<span class="visually-hidden">
+                      Центра инновационной стоматологии</span
+                    >
+                    <span aria-hidden="true">↗</span></a
+                  ><a
+                    class="text-link"
+                    href="https://instom40.ru/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >На сайт<span class="visually-hidden">
+                      Центра инновационной стоматологии (откроется в новой
+                      вкладке)</span
+                    >
+                    <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="portfolio-card portfolio-card--project">
+              <div class="portfolio-project-image">
+                <img
+                  src="assets/images/ideastroy-home.jpg"
+                  width="2532"
+                  height="1620"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Главная страница компании «Идея Строй»"
+                />
+              </div>
+              <div class="portfolio-project-content">
+                <div class="portfolio-project-tags">
+                  <span>Сайт компании</span><span>Ремонт</span>
+                </div>
+                <h3>Идея Строй</h3>
+                <p>
+                  Ремонт квартир и домов в Калуге: услуги, портфолио, блог и
+                  контакты.
+                </p>
+                <div class="portfolio-project-links">
+                  <a class="text-link" href="cases/ideastroy.html"
+                    >Смотреть кейс<span class="visually-hidden">
+                      «Идея Строй»</span
+                    >
+                    <span aria-hidden="true">↗</span></a
+                  ><a
+                    class="text-link"
+                    href="https://ideastroy.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >На сайт<span class="visually-hidden">
+                      «Идея Строй» (откроется в новой вкладке)</span
+                    >
+                    <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="portfolio-card portfolio-card--project">
+              <div class="portfolio-project-image">
+                <img
+                  src="assets/images/congear-home.jpg"
+                  width="2532"
+                  height="1620"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Главная страница сайта КОМЗ о конических шестернях"
+                />
+              </div>
+              <div class="portfolio-project-content">
+                <div class="portfolio-project-tags">
+                  <span>Сайт производства</span><span>Промышленность</span>
+                </div>
+                <h3>КОМЗ — конические шестерни</h3>
+                <p>
+                  Изготовление шестерён по чертежам: технические возможности,
+                  процесс и качество.
+                </p>
+                <div class="portfolio-project-links">
+                  <a class="text-link" href="cases/congear.html"
+                    >Смотреть кейс<span class="visually-hidden">
+                      КОМЗ — конические шестерни</span
+                    >
+                    <span aria-hidden="true">↗</span></a
+                  ><a
+                    class="text-link"
+                    href="https://con-gear.ru/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >На сайт<span class="visually-hidden">
+                      КОМЗ — конические шестерни (откроется в новой
+                      вкладке)</span
+                    >
+                    <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="portfolio-card portfolio-card--project">
+              <div class="portfolio-project-image">
+                <img
+                  src="assets/images/uniqset-home.jpg"
+                  width="2532"
+                  height="1620"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Главная страница компании «Юник С»"
+                />
+              </div>
+              <div class="portfolio-project-content">
+                <div class="portfolio-project-tags">
+                  <span>Сайт компании</span><span>Оборудование</span>
+                </div>
+                <h3>Юник С</h3>
+                <p>
+                  Промышленное оборудование: каталог, услуги, отгрузки и
+                  информация о компании.
+                </p>
+                <div class="portfolio-project-links">
+                  <a class="text-link" href="cases/uniqset.html"
+                    >Смотреть кейс<span class="visually-hidden"> «Юник С»</span>
+                    <span aria-hidden="true">↗</span></a
+                  ><a
+                    class="text-link"
+                    href="https://uniqset.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >На сайт<span class="visually-hidden">
+                      «Юник С» (откроется в новой вкладке)</span
+                    >
+                    <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="portfolio-card portfolio-card--project">
+              <div class="portfolio-project-image">
+                <img
+                  src="assets/images/diaconia-home.jpg"
+                  width="2532"
+                  height="1620"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Главная страница благотворительного фонда «Диакония»"
+                />
+              </div>
+              <div class="portfolio-project-content">
+                <div class="portfolio-project-tags">
+                  <span>Сайт фонда</span><span>Благотворительность</span>
+                </div>
+                <h3>Диакония</h3>
+                <p>
+                  Благотворительный фонд: помощь бездомным, социальные проекты и
+                  новости.
+                </p>
+                <div class="portfolio-project-links">
+                  <a class="text-link" href="cases/diaconia.html"
+                    >Смотреть кейс<span class="visually-hidden">
+                      фонда «Диакония»</span
+                    >
+                    <span aria-hidden="true">↗</span></a
+                  ><a
+                    class="text-link"
+                    href="https://diaconiafond.ru/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >На сайт<span class="visually-hidden">
+                      фонда «Диакония» (откроется в новой вкладке)</span
+                    >
+                    <span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+          <template id="portfolio-card-template">
+            <article
+              class="portfolio-card portfolio-card--project"
+              data-stagger-item
+            >
+              <div class="portfolio-project-image">
+                <img
+                  data-project-image
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                  alt=""
+                />
+              </div>
+              <div class="portfolio-project-content">
+                <div class="portfolio-project-tags">
+                  <span data-project-category></span
+                  ><span data-project-sphere></span>
+                </div>
+                <h3 data-project-title></h3>
+                <p data-project-description></p>
+                <a class="text-link portfolio-project-link" data-project-link
+                  >Смотреть проект <span aria-hidden="true">↗</span></a
+                >
+              </div>
+            </article>
+          </template>
+        </div>
+      </section>
+
+      <section class="section approach" aria-labelledby="approach-title">
+        <div class="container approach-grid">
+          <div data-reveal>
+            <p class="eyebrow">
+              <span class="section-index">04 /</span> НАШ ПОДХОД
+            </p>
+            <h2 id="approach-title">
+              Разработка <span class="muted">без лишней сложности</span>
+            </h2>
+            <p class="approach-intro">
+              Обсуждаем решения понятным языком и помогаем пройти путь от идеи
+              до работающего сайта.
+            </p>
+          </div>
+          <div class="approach-cards" data-stagger>
+            <article>
+              <svg
+                class="approach-icon"
+                viewBox="0 0 40 40"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M7 9h20a4 4 0 0 1 4 4v9a4 4 0 0 1-4 4H15l-6 5v-5H7a4 4 0 0 1-4-4v-9a4 4 0 0 1 4-4ZM11 17h.1M17 17h.1M23 17h.1M31 16h2a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4h-1v4l-5-4h-6"
+                />
+              </svg>
+              <h3>Напрямую с разработчиком</h3>
+              <p>
+                Обсуждаете задачу и решения непосредственно с разработчиком, без
+                лишних посредников.
+              </p>
+            </article>
+            <article>
+              <svg
+                class="approach-icon"
+                viewBox="0 0 40 40"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M6 11h9m6 0h13M6 20h16m6 0h6M6 29h5m6 0h17" />
+                <circle cx="18" cy="11" r="3" />
+                <circle cx="25" cy="20" r="3" />
+                <circle cx="14" cy="29" r="3" />
+              </svg>
+              <h3>Индивидуальные решения</h3>
+              <p>
+                Подбираем подход под задачи бизнеса и объясняем, зачем нужны
+                предложенные решения.
+              </p>
+            </article>
+            <article>
+              <svg
+                class="approach-icon"
+                viewBox="0 0 40 40"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M10 4h14l6 6v24a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2ZM24 4v6h6M15 27h9M15 30h6M16 23V15h4a3 3 0 0 1 0 6h-6"
+                />
+              </svg>
+              <h3>Понятная стоимость</h3>
+              <p>
+                После обсуждения определяем состав работ и стоимость, чтобы вы
+                понимали, за что платите.
+              </p>
+            </article>
+            <article>
+              <svg
+                class="approach-icon"
+                viewBox="0 0 40 40"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <rect x="8" y="7" width="24" height="29" rx="3" />
+                <path
+                  d="M16 7V5h8v2M13 15l2 2 3-3M21 16h6M13 23l2 2 3-3M21 24h6M13 31l2 2 3-3M21 32h6"
+                />
+              </svg>
+              <h3>Контроль процесса</h3>
+              <p>
+                Согласовываем ключевые этапы и держим вас в курсе хода работы.
+              </p>
+            </article>
+            <article>
+              <svg
+                class="approach-icon"
+                viewBox="0 0 40 40"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M6 21v-2a14 14 0 0 1 28 0v2M6 21h4v8H8a2 2 0 0 1-2-2v-6ZM34 21h-4v8h2a2 2 0 0 0 2-2v-6ZM30 29c0 4-3 6-8 6h-3M16 18h8M20 14v8"
+                />
+              </svg>
+              <h3>Поддержка сайта</h3>
+              <p>Обсуждаем сопровождение и помощь с сайтом после запуска.</p>
+            </article>
+            <article>
+              <svg
+                class="approach-icon"
+                viewBox="0 0 40 40"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M6 33h28M9 29v-7h5v7M18 29V17h5v12M27 29V12h5v17M8 17l8-5 6 2 9-8M26 6h5v5"
+                />
+              </svg>
+              <h3>Основа для продвижения</h3>
+              <p>
+                Учитываем требования поисковых систем и задачи рекламы при
+                разработке сайта.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section process"
+        id="process"
+        aria-labelledby="process-title"
+      >
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <div>
+              <p class="eyebrow">
+                <span class="section-index">05 /</span> КАК МЫ РАБОТАЕМ
+              </p>
+              <h2 id="process-title">
+                Путь к результату<br /><span class="muted"
+                  >без лишней сложности.</span
+                >
+              </h2>
+            </div>
+            <p class="heading-aside">
+              Прозрачный процесс, в котором вы понимаете, что происходит на
+              каждом этапе.
+            </p>
+          </div>
+          <div class="process-list" data-stagger>
+            <article>
+              <span class="process-number">01</span>
+              <div>
+                <h3>Обсуждение</h3>
+                <p>
+                  Бесплатно обсуждаем ваш бизнес, задачу и ожидания от сайта.
+                </p>
+              </div>
+              <span aria-hidden="true">↗</span>
+            </article>
+            <article>
+              <span class="process-number">02</span>
+              <div>
+                <h3>Предложение</h3>
+                <p>
+                  Определяем состав работ, стоимость и сроки и согласовываем
+                  предложение.
+                </p>
+              </div>
+              <span aria-hidden="true">↗</span>
+            </article>
+            <article>
+              <span class="process-number">03</span>
+              <div>
+                <h3>Дизайн и разработка</h3>
+                <p>
+                  Проектируем структуру, согласовываем дизайн и разрабатываем
+                  сайт.
+                </p>
+              </div>
+              <span aria-hidden="true">↗</span>
+            </article>
+            <article>
+              <span class="process-number">04</span>
+              <div>
+                <h3>Проверка и запуск</h3>
+                <p>
+                  Проверяем работу сайта на разных устройствах и публикуем его.
+                </p>
+              </div>
+              <span aria-hidden="true">↗</span>
+            </article>
+            <article>
+              <span class="process-number">05</span>
+              <div>
+                <h3>Поддержка</h3>
+                <p>
+                  Обсуждаем дальнейшее сопровождение и развитие сайта после
+                  запуска.
+                </p>
+              </div>
+              <span aria-hidden="true">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section pricing"
+        id="pricing"
+        aria-labelledby="pricing-title"
+      >
+        <div class="container pricing-panel">
+          <div class="pricing-heading" data-reveal>
+            <p class="eyebrow eyebrow--light">
+              <span class="section-index">06 /</span> СТОИМОСТЬ
+            </p>
+            <h2 id="pricing-title">
+              У каждого проекта<br /><span>своя задача.</span>
+            </h2>
+            <p>
+              Стоимость и сроки зависят от объёма, сложности, функциональности и
+              готовности материалов. После бесплатного обсуждения определим
+              состав работ и подготовим предложение.
+            </p>
+          </div>
+          <div class="pricing-grid" data-stagger>
+            <article class="pricing-card">
+              <span class="pricing-card-index">01 / ЛЕНДИНГ</span>
+              <h3>Лендинги</h3>
+              <strong class="pricing-price">Стоимость уточняется</strong>
+              <p>Для продвижения одного продукта, услуги или акции.</p>
+              <p>
+                <b>Состав:</b> структура, дизайн, адаптивная разработка и форма
+                заявки.
+              </p>
+              <a class="button button--white" href="#contact"
+                >Обсудить лендинг <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="pricing-card">
+              <span class="pricing-card-index">02 / КОМПАНИЯМ</span>
+              <h3>Корпоративные сайты</h3>
+              <strong class="pricing-price">Стоимость уточняется</strong>
+              <p>
+                Для представления компании, её услуг и контактной информации.
+              </p>
+              <p>
+                <b>Состав:</b> структура разделов, дизайн, адаптивная разработка
+                и формы связи.
+              </p>
+              <a class="button button--white" href="#contact"
+                >Обсудить сайт <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article class="pricing-card">
+              <span class="pricing-card-index">03 / ПРОДАЖИ</span>
+              <h3>Интернет-магазины</h3>
+              <strong class="pricing-price">Стоимость уточняется</strong>
+              <p>Для продажи товаров онлайн и приёма заказов.</p>
+              <p>
+                <b>Состав:</b> дизайн, адаптивная разработка, каталог, карточки
+                товаров и оформление заказа.
+              </p>
+              <a class="button button--white" href="#contact"
+                >Обсудить магазин <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section testimonials"
+        aria-labelledby="testimonials-title"
+      >
+        <div class="container testimonials-grid">
+          <div data-reveal>
+            <p class="eyebrow">
+              <span class="section-index">07 /</span> ОТЗЫВЫ
+            </p>
+            <h2 id="testimonials-title">
+              Хорошая работа<br /><span class="muted"
+                >говорит сама за себя.</span
+              >
+            </h2>
+            <p class="testimonials-note">
+              Примеры оформления отзывов. Перед публикацией замените их
+              подтверждёнными отзывами клиентов.
+            </p>
+          </div>
+          <div class="testimonial-list" data-stagger>
+            <article class="testimonial-card">
+              <span class="quote-mark" aria-hidden="true">“</span>
+              <blockquote>
+                Хотелось не просто красивый сайт, а понятный инструмент для
+                клиентов. Команда помогла разобраться в структуре, предложила
+                удачные решения и внимательно отнеслась к деталям. Результат
+                получился именно таким, каким мы его представляли.
+              </blockquote>
+              <div class="testimonial-author">
+                <span class="testimonial-avatar" aria-hidden="true">АК</span>
+                <div>
+                  <h3>Анна Ковалёва</h3>
+                  <p>Руководитель проекта</p>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <span class="quote-mark" aria-hidden="true">“</span>
+              <blockquote>
+                Понравилось, что на каждом этапе было понятно, что происходит
+                и зачем. Все пожелания обсудили, сложные моменты объяснили
+                простым языком. Сайт получился современным и удобным даже на
+                телефоне.
+              </blockquote>
+              <div class="testimonial-author">
+                <span class="testimonial-avatar testimonial-avatar--sand" aria-hidden="true">ДМ</span>
+                <div>
+                  <h3>Дмитрий Морозов</h3>
+                  <p>Предприниматель</p>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <span class="quote-mark" aria-hidden="true">“</span>
+              <blockquote>
+                Было приятно работать с командой, которая действительно
+                погружается в задачу. Нам помогли ясно рассказать о наших
+                услугах и собрать всё в цельный, аккуратный сайт.
+              </blockquote>
+              <div class="testimonial-author">
+                <span class="testimonial-avatar testimonial-avatar--lavender" aria-hidden="true">ЕС</span>
+                <div>
+                  <h3>Екатерина Соколова</h3>
+                  <p>Маркетолог</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq" aria-labelledby="faq-title">
+        <div class="container faq-grid">
+          <div data-reveal>
+            <p class="eyebrow">
+              <span class="section-index">08 /</span> ВОПРОСЫ И ОТВЕТЫ
+            </p>
+            <h2 id="faq-title">
+              Остались<br /><span class="muted">вопросы?</span>
+            </h2>
+            <p>
+              Собрали ответы на то, о чём нас могут спросить в начале работы.
+            </p>
+            <a class="text-link" href="#contact"
+              >Задать свой вопрос <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="faq-list" data-stagger>
+            <details>
+              <summary>
+                Сколько стоит разработка сайта?<span aria-hidden="true"></span>
+              </summary>
+              <p>
+                Стоимость рассчитывается индивидуально после знакомства с
+                задачей и определения объёма работ.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Сколько времени занимает проект?<span aria-hidden="true"></span>
+              </summary>
+              <p>
+                Сроки зависят от сложности, объёма материалов и скорости
+                согласований. Обсудим их до начала работы.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Что нужно предоставить для разработки сайта?<span
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <p>
+                Расскажите о бизнесе и задаче, поделитесь имеющимися текстами,
+                изображениями и материалами о компании. Вместе определим, чего
+                не хватает.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Поможете с текстами и изображениями?<span
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <p>
+                Поможем определить, какие материалы нужны, и обсудим подготовку
+                текстов и подбор изображений. Состав и стоимость такой работы
+                согласуем отдельно.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Можно ли создать сайт с нуля?<span aria-hidden="true"></span>
+              </summary>
+              <p>
+                Да, начнём с обсуждения задачи и структуры, затем займёмся
+                дизайном, разработкой и запуском.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Будет ли сайт удобно смотреть на телефоне?<span
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <p>
+                Адаптивность учитывается при проектировании и разработке, чтобы
+                сайтом было удобно пользоваться на разных экранах.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Можно ли продвигать сайт в Яндексе?<span
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <p>
+                Да, сайт можно подготовить к поисковому продвижению и рекламе в
+                Яндексе. Состав работ по продвижению обсуждается отдельно;
+                позиции и результаты не гарантируются.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Кто будет поддерживать сайт после запуска?<span
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <p>
+                Вы можете поддерживать сайт самостоятельно или обсудить с нами
+                сопровождение. Условия и стоимость определяются отдельно.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Можно ли доработать сайт после запуска?<span
+                  aria-hidden="true"
+                ></span>
+              </summary>
+              <p>
+                Да, можно обсудить новые разделы, функции и другие изменения.
+                Сроки и стоимость зависят от задачи.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section contact"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="container contact-grid">
+          <div data-reveal>
+            <p class="eyebrow eyebrow--light">
+              <span class="section-index">ВАШ ХОД /</span> НАЧНЁМ С РАЗГОВОРА
+            </p>
+            <h2 id="contact-title">Давайте обсудим <span>ваш проект</span></h2>
+            <p class="contact-intro">
+              Расскажите о своей задаче. Поможем разобраться, какой сайт нужен
+              вашему бизнесу, и сориентируем по стоимости и срокам
+            </p>
+            <p class="contact-free">Подробная консультация бесплатна для вас.</p>
+            <div class="contact-decoration" aria-hidden="true">✳</div>
+          </div>
+          <div class="form-panel" data-reveal>
+            <div class="form-heading">
+              <div>
+                <span>НОВЫЙ ПРОЕКТ /</span>
+                <h3>Расскажите о себе</h3>
+              </div>
+              <span aria-hidden="true">↗</span>
+            </div>
+            <form id="project-form" method="post" novalidate>
+              <div class="form-row">
+                <div class="field">
+                  <label for="name"
+                    >Как вас зовут <span aria-hidden="true">*</span></label
+                  ><input
+                    id="name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    required
+                    aria-describedby="name-error"
+                    aria-invalid="false"
+                    placeholder="Ваше имя"
+                  /><span
+                    class="field-error"
+                    id="name-error"
+                    data-error-for="name"
+                  ></span>
+                </div>
+                <div class="field">
+                  <label for="contact-field"
+                    >Как с вами связаться
+                    <span aria-hidden="true">*</span></label
+                  ><input
+                    id="contact-field"
+                    name="contact"
+                    type="text"
+                    autocomplete="email"
+                    required
+                    aria-describedby="contact-error"
+                    aria-invalid="false"
+                    placeholder="Почта или телефон"
+                  /><span
+                    class="field-error"
+                    id="contact-error"
+                    data-error-for="contact"
+                  ></span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="project-type"
+                  >Что вам нужно? <span aria-hidden="true">*</span></label
+                ><select
+                  id="project-type"
+                  name="projectType"
+                  required
+                  aria-describedby="project-type-error"
+                  aria-invalid="false"
+                >
+                  <option value="">Выберите тип проекта</option>
+                  <option value="landing">Лендинг</option>
+                  <option value="corporate">Корпоративный сайт</option>
+                  <option value="store">Интернет-магазин</option>
+                  <option value="design">Дизайн сайта</option>
+                  <option value="development">Разработка сайта</option>
+                  <option value="other">Другая задача</option></select
+                ><span
+                  class="field-error"
+                  id="project-type-error"
+                  data-error-for="projectType"
+                ></span>
+              </div>
+              <div class="field">
+                <label for="message"
+                  >Расскажите о задаче <span aria-hidden="true">*</span></label
+                ><textarea
+                  id="message"
+                  name="message"
+                  rows="3"
+                  required
+                  aria-describedby="message-error"
+                  aria-invalid="false"
+                  placeholder="Несколько слов о вашем проекте"
+                ></textarea
+                ><span
+                  class="field-error"
+                  id="message-error"
+                  data-error-for="message"
+                ></span>
+              </div>
+              <div class="field field--consent">
+                <label class="consent-label" for="consent"
+                  ><input
+                    id="consent"
+                    type="checkbox"
+                    name="consent"
+                    required
+                    aria-describedby="consent-help consent-error"
+                    aria-invalid="false"
+                  /><span
+                    >Я согласен(на) на обработку персональных данных для ответа
+                    на мой запрос <span aria-hidden="true">*</span></span
+                  ></label
+                >
+                <p class="consent-help" id="consent-help">
+                  Политика обработки персональных данных ещё не опубликована; её
+                  необходимо подготовить до запуска формы.
+                </p>
+                <span
+                  class="field-error"
+                  id="consent-error"
+                  data-error-for="consent"
+                ></span>
+              </div>
+              <button
+                class="button button--primary form-submit"
+                type="submit"
+                disabled
+              >
+                Отправить заявку <span aria-hidden="true">↗</span>
+              </button>
+              <p
+                class="form-status"
+                data-form-status
+                role="status"
+                aria-live="polite"
+              ></p>
+              <p class="form-disclaimer">
+                Форма требует подключения обработчика перед запуском. Поля со
+                звёздочкой обязательны.
+              </p>
+              <noscript
+                ><p class="form-disclaimer">
+                  Для работы формы необходим JavaScript. Отправка заявок пока не
+                  настроена.
+                </p></noscript
+              >
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div>
+            <a
+              class="brand brand--footer"
+              href="#top"
+              aria-label="Обсидиан — на главную"
+              ><span class="brand-mark" aria-hidden="true"><span></span></span
+              ><span>обсидиан<span class="brand-dot">.</span></span></a
+            >
+            <p>Сайты со смыслом<br />и характером.</p>
+          </div>
+          <nav aria-label="Навигация в подвале">
+            <a href="#services">Услуги</a><a href="#portfolio">Портфолио</a
+            ><a href="#process">Этапы работы</a><a href="#pricing">Стоимость</a
+            ><a href="#contact">Контакты</a>
+          </nav>
+          <div class="footer-info">
+            <span>КОНТАКТЫ</span>
+            <div class="footer-contacts">
+              <a href="tel:+79533392119">+7 953 339 21 19</a>
+              <a href="mailto:ceo@obsidianweb.ru">ceo@obsidianweb.ru</a>
+              <div class="messenger-links">
+                <a href="https://max.ru/u/f9LHodD0cOLalLghDjZwTyNTVos0xyyUWdQAWlt0J5QNsN8-x4kr8aX7M2I" aria-label="Написать в MAX">
+                  <img src="assets/images/MAX.svg" alt="" />
+                </a>
+                <a href="https://t.me/nemkoff" aria-label="Написать в Telegram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#229ED9"/><path fill="#fff" d="M18.5 6.2 16.4 17c-.16.76-.58.94-1.17.59l-3.18-2.34-1.53 1.47c-.17.17-.31.31-.64.31l.23-3.24 5.9-5.33c.26-.23-.06-.36-.39-.13l-7.3 4.6-3.14-.98c-.68-.21-.7-.68.14-1.01l12.28-4.73c.57-.21 1.07.13.9.99Z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© Обсидиан</span
+          ><span
+            >Политику обработки персональных данных необходимо опубликовать
+            перед запуском.</span
+          ><a href="#top">Наверх ↑</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

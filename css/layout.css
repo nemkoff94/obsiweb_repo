@@ -1,0 +1,26 @@
+.container{width:min(100% - (var(--gutter) * 2),var(--container));margin-inline:auto}
+.section{padding-block:80px}
+.section-heading{display:flex;flex-direction:column;gap:22px;margin-bottom:38px}
+.heading-aside{max-width:300px;color:#686f7b;line-height:1.75}
+.hero-grid,.value-grid,.approach-grid,.testimonials-grid,.faq-grid,.contact-grid{display:grid;gap:42px}
+.service-grid,.portfolio-grid,.approach-cards{display:grid;gap:14px}
+.site-header{position:relative;z-index:50;background:rgba(247,248,250,.96);border-bottom:1px solid var(--line)}
+.header-contact-bar{border-bottom:1px solid var(--line)}
+.header-contacts{display:flex;justify-content:flex-end;align-items:center;flex-wrap:wrap;gap:4px 20px;padding-block:6px;font-size:12px;font-weight:700}
+.header-contacts>a:hover{color:var(--blue)}
+.header-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:15px}
+.header-nav{width:100%;display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;padding-bottom:18px;font-size:13px;font-weight:700}
+.header-nav>a:not(.button){padding-block:3px}
+.menu-toggle{display:none}
+.hero{padding-top:64px;padding-bottom:26px;overflow:hidden}
+.hero-grid{align-items:center}
+.hero-bottom{display:flex;align-items:center;gap:15px;margin-top:55px;font-size:9px;font-weight:800;letter-spacing:.13em;color:#89909a}
+.hero-bottom span:last-child{margin-left:auto}
+.trust-inner{padding-block:36px}
+.value-grid,.contact-grid{align-items:start}
+.portfolio-grid{grid-template-columns:1fr}
+.approach-cards{grid-template-columns:1fr 1fr}
+.pricing-panel{display:grid;gap:32px}
+.footer-main{display:grid;gap:35px}
+.footer-main nav{display:flex;flex-wrap:wrap;gap:12px 22px}
+.footer-bottom{display:flex;flex-wrap:wrap;gap:12px 24px}
