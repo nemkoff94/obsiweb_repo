@@ -28,16 +28,15 @@
     dialog.appendChild(message);
 
     let panel = document.querySelector('.contact .form-panel');
+    const panelParent = panel && panel.parentNode;
+    const panelNextSibling = panel && panel.nextSibling;
     let loading = false;
     let opener = null;
     let previousOverflow = '';
     document.body.appendChild(dialog);
 
     if (panel) {
-      dialog.appendChild(panel);
       message.hidden = true;
-      const contactLink = document.querySelector('.contact-popup-link');
-      if (contactLink) contactLink.hidden = false;
     }
 
     const loadForm = async (url) => {
@@ -80,6 +79,7 @@
       opener = link;
       previousOverflow = document.body.style.overflow;
       document.body.style.overflow = 'hidden';
+      if (panel && panelParent) dialog.appendChild(panel);
       dialog.showModal();
       if (!panel && !loading) loadForm(link.href);
     });
@@ -98,6 +98,7 @@
           event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
     });
     dialog.addEventListener('close', () => {
+      if (panel && panelParent) panelParent.insertBefore(panel, panelNextSibling);
       document.body.style.overflow = previousOverflow;
       if (opener && opener.closest('[data-mobile-menu][hidden]')) {
         const toggle = document.querySelector('[data-menu-toggle]');

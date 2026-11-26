@@ -55,7 +55,6 @@
 .project-popup .form-heading>span{display:none}
 .project-popup__message{padding:70px 25px 35px}
 .project-popup__message a{color:var(--blue);text-decoration:underline}
-.contact-popup-link{margin-top:28px}
 .field{min-width:0;margin-bottom:20px}.field label:not(.consent-label){display:block;margin-bottom:8px;font-size:12px;font-weight:800}.field label>span[aria-hidden]{color:var(--blue)}
 .field input:not([type=checkbox]),.field select,.field textarea{display:block;width:100%;min-height:49px;padding:13px 14px;color:var(--ink);background:#f8f9fb;border:1px solid #e6e8ed;border-radius:6px;outline-offset:2px}.field textarea{resize:vertical;min-height:90px}.field input::placeholder,.field textarea::placeholder{color:#a1a7b0}.field select{appearance:auto;color:#555e6d}.field [aria-invalid=true]{border-color:#c92a39}.field-error{display:block;color:#b72132;font-size:11px;line-height:1.4}.field-error:not(:empty){margin-top:6px}
 .consent-label{display:flex;align-items:flex-start;gap:10px;font-size:11px;line-height:1.5;color:#59616e}.consent-label input{width:17px;height:17px;flex:none;margin:1px 0 0;accent-color:var(--blue)}.consent-help,.form-disclaimer{margin-top:8px;color:#737b87;font-size:10px;line-height:1.55}.form-status:not(:empty){margin-top:12px;font-size:12px}.form-submit{width:100%}
