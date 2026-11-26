@@ -9,7 +9,7 @@
     }
   };
 
-  // Configure data-api-url on #project-form with the actual CRM/API endpoint.
+  // Configure data-api-url on #project-form with the actual endpoint.
   // The endpoint must accept POST JSON; an HTTP 2xx response means success.
   // Without an endpoint no request is sent and the user's data stays in the form.
   const sendProject = async (endpoint, payload) => {
@@ -153,7 +153,7 @@
         await sendProject((form.dataset.apiUrl || '').trim(), payload);
         form.reset();
         fields.forEach((name) => setError(name, ''));
-        setStatus('Заявка отправлена. Спасибо!');
+        setStatus('Заявка принята к отправке. Спасибо!');
       } catch (error) {
         if (error && error.message === 'not-configured') {
           setStatus('Отправка заявок пока не настроена. Пожалуйста, свяжитесь с нами другим способом.');
