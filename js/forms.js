@@ -45,8 +45,7 @@
     }
   };
 
-  ready(() => {
-    const form = document.getElementById('project-form');
+  const initForm = (form) => {
     if (!(form instanceof HTMLFormElement)) return;
 
     let status = form.querySelector('[data-form-status]');
@@ -166,6 +165,13 @@
         if (submit) submit.disabled = wasDisabled;
         form.removeAttribute('aria-busy');
       }
+    });
+  };
+
+  ready(() => {
+    initForm(document.getElementById('project-form'));
+    document.addEventListener('project-form:added', (event) => {
+      initForm(event.detail);
     });
   });
 })();

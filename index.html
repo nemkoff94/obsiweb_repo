@@ -69,6 +69,7 @@
     <script defer src="js/portfolio.js"></script>
     <script defer src="js/animations.js"></script>
     <script defer src="js/forms.js"></script>
+    <script defer src="js/project-popup.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Перейти к содержимому</a>
@@ -1064,7 +1065,7 @@
             <article class="pricing-card">
               <span class="pricing-card-index">01 / ЛЕНДИНГ</span>
               <h3>Лендинги</h3>
-              <strong class="pricing-price">Стоимость уточняется</strong>
+              <strong class="pricing-price">От 20 000 ₽</strong>
               <p>Для продвижения одного продукта, услуги или акции.</p>
               <p>
                 <b>Состав:</b> структура, дизайн, адаптивная разработка и форма
@@ -1077,7 +1078,7 @@
             <article class="pricing-card">
               <span class="pricing-card-index">02 / КОМПАНИЯМ</span>
               <h3>Корпоративные сайты</h3>
-              <strong class="pricing-price">Стоимость уточняется</strong>
+              <strong class="pricing-price">От 45 000 ₽</strong>
               <p>
                 Для представления компании, её услуг и контактной информации.
               </p>
@@ -1092,7 +1093,7 @@
             <article class="pricing-card">
               <span class="pricing-card-index">03 / ПРОДАЖИ</span>
               <h3>Интернет-магазины</h3>
-              <strong class="pricing-price">Стоимость уточняется</strong>
+              <strong class="pricing-price">От 80 000 ₽</strong>
               <p>Для продажи товаров онлайн и приёма заказов.</p>
               <p>
                 <b>Состав:</b> дизайн, адаптивная разработка, каталог, карточки
@@ -1310,13 +1311,14 @@
               вашему бизнесу, и сориентируем по стоимости и срокам
             </p>
             <p class="contact-free">Подробная консультация бесплатна для вас.</p>
+            <a class="button button--white contact-popup-link" href="#contact" hidden>Обсудить проект <span aria-hidden="true">↗</span></a>
             <div class="contact-decoration" aria-hidden="true">✳</div>
           </div>
-          <div class="form-panel" data-reveal>
+          <div class="form-panel">
             <div class="form-heading">
               <div>
                 <span>НОВЫЙ ПРОЕКТ /</span>
-                <h3>Расскажите о себе</h3>
+                <h3 id="project-form-title">Расскажите о себе</h3>
               </div>
               <span aria-hidden="true">↗</span>
             </div>
