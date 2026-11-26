@@ -23,9 +23,9 @@
   };
 
   ready(() => {
-    const grid = document.getElementById('portfolio-grid');
+    const slider = document.getElementById('portfolio-slider');
     const template = document.getElementById('portfolio-card-template');
-    if (!grid || !(template instanceof HTMLTemplateElement) || projects.length === 0) return;
+    if (!slider || !(template instanceof HTMLTemplateElement)) return;
 
     const fragment = document.createDocumentFragment();
     projects.forEach((project) => {
@@ -67,7 +67,31 @@
     });
 
     // Keep statically rendered projects visible, including when JavaScript is unavailable.
-    grid.appendChild(fragment);
-    document.dispatchEvent(new CustomEvent('portfolio:updated'));
+    slider.appendChild(fragment);
+    if (projects.length) document.dispatchEvent(new CustomEvent('portfolio:updated'));
+
+    const controls = document.querySelector('.portfolio-slider-controls');
+    const prev = document.querySelector('[data-portfolio-prev]');
+    const next = document.querySelector('[data-portfolio-next]');
+    if (!(controls instanceof HTMLElement) || !(prev instanceof HTMLButtonElement) || !(next instanceof HTMLButtonElement)) return;
+
+    const updateControls = () => {
+      const maxScroll = slider.scrollWidth - slider.clientWidth;
+      controls.hidden = maxScroll <= 1;
+      prev.disabled = slider.scrollLeft <= 1;
+      next.disabled = slider.scrollLeft >= maxScroll - 1;
+    };
+    const scrollCard = (direction) => {
+      const card = slider.querySelector('.portfolio-card');
+      if (!card) return;
+      const gap = parseFloat(getComputedStyle(slider).columnGap) || 0;
+      slider.scrollBy({ left: direction * (card.getBoundingClientRect().width + gap) });
+    };
+
+    prev.addEventListener('click', () => scrollCard(-1));
+    next.addEventListener('click', () => scrollCard(1));
+    slider.addEventListener('scroll', updateControls, { passive: true });
+    window.addEventListener('resize', updateControls);
+    updateControls();
   });
 })();
